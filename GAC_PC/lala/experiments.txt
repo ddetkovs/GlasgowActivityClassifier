@@ -1,0 +1,4053 @@
+100,0.8080829590788845
+150,0.8221676043624538
+200,0.8539720311855742
+250,0.8633214820330057
+300,0.8840088235581617
+350,0.8950289000936306
+400,0.9133950070271702
+450,0.9208957652588105
+500,0.9255856234211367
+550,0.9287880202655479
+600,0.9359641695315761
+650,0.9418874677527204
+700,0.9499448884704376
+750,0.9498048851384078
+800,0.9624137092160455
+850,0.964362176326085
+900,0.9695906354057238
+950,0.9688408713597434
+1000,0.9729342278897941
+1050,0.968099786867952
+1100,0.9737137749590822
+1150,0.9736205773114416
+1200,0.9768940355931398
+1250,0.9786418592944817
+1300,0.9777121153280451
+1350,0.9790790414104175
+1400,0.9812088852109235
+1450,0.9778947385360819
+1500,0.9820466644460901
+1550,0.9800397693534111
+1600,0.984832355517671
+1650,0.982863355579329
+1700,0.9810210852151923
+1750,0.9837660826754361
+1800,0.9817068668287917
+1850,0.9826552792038002
+1900,0.9827981265996473
+1950,0.9844667870064813
+2000,0.9828703600187841
+2050,0.98160947126107
+2100,0.986950048437398
+2150,0.9790305300868773
+2200,0.9800878802947176
+2250,0.9858806399810984
+2300,0.9864712011726401
+2350,0.9876125335842127
+2400,0.9815116872181645
+2450,0.9885650029001545
+2500,0.9866584392687845
+2550,0.9828578288813589
+2600,0.9865824225695646
+2650,0.9867677589624383
+2700,0.9871046622655613
+2750,0.9861407560317188
+2800,0.988204317103666
+2850,0.9832550474082064
+2900,0.9861328658718074
+2950,0.9874951016990002
+3000,0.9850607997067862
+**.****.***.*.*.*.*.*.**.**.****.**.*.*.*.*.*.***.*.****.**.*.*.*.*.*..****.****.**.*.*.*.**.*.**.***.*.***.*.*.*.*.*.*.*.*.*.*.*****.**.**.**.***.*.*.*.*.*.*****.*.**.*.*.*.**.***.**.*.*.***.****.*.**.*.*.*.*.*.*.**.**.*.*.****.*.*.***.* -1       0.071
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1162    0    0 |    a = moving
+    1  247    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1409               99.9291 %
+Incorrectly Classified Instances         1                0.0709 %
+Kappa statistic                          0.9975
+Mean absolute error                      0.0005
+Root mean squared error                  0.0217
+Relative absolute error                  0.2439 %
+Root relative squared error              6.9948 %
+Coverage of cases (0.95 level)          99.9291 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1410     
+Ignored Class Unknown Instances                  1     
+
+ -1       2.926
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.97      0.008      0.977     0.97      0.973      0.981    slow_walking
+                 0.944     0.012      0.934     0.944     0.939      0.966    fast_walking
+                 0.993     0.017      0.97      0.993     0.981      0.988    slow_running
+                 0.958     0.001      0.994     0.958     0.975      0.978    fast_running
+                 0.947     0.001      0.982     0.947     0.964      0.973    upstairs
+                 0.951     0          1         0.951     0.975      0.976    downstairs
+Weighted Avg.    0.971     0.01       0.971     0.971     0.971      0.98 
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 293   9   0   0   0   0 |   a = slow_walking
+   4 169   6   0   0   0 |   b = fast_walking
+   0   3 414   0   0   0 |   c = slow_running
+   0   0   7 159   0   0 |   d = fast_running
+   3   0   0   0  54   0 |   e = upstairs
+   0   0   0   1   1  39 |   f = downstairs
+
+
+Correctly Classified Instances        1128               97.074  %
+Incorrectly Classified Instances        34                2.926  %
+Kappa statistic                          0.9612
+Total Cost                              16     
+Average Cost                             0.0138
+Mean absolute error                      0.0098
+Root mean squared error                  0.0988
+Relative absolute error                  3.8687 %
+Root relative squared error             27.824  %
+Coverage of cases (0.95 level)          97.074  %
+Mean rel. region size (0.95 level)      16.6667 %
+Total Number of Instances             1162     
+
+ -1       0    
+ -0.996   1.613
+  0.996  13.306
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.982     0          1         0.982     0.991      1        standing
+                 0         0.016      0         0         0          ?        lift
+Weighted Avg.    0.984     0          1         0.984     0.992      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  29   0   0 |   a = sitting
+   0 215   4 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         244               98.3871 %
+Incorrectly Classified Instances         4                1.6129 %
+Kappa statistic                          0.9269
+Mean absolute error                      0.0107
+Root mean squared error                  0.1033
+Relative absolute error                  7.5591 %
+Root relative squared error             39.3734 %
+Coverage of cases (0.95 level)          98.3871 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              248     
+
+OVERALL PRECISION 0.98
+.*.*.*.*.******.*.**.***.*.***.*.**.*.***.*.****.*.***.***.***.*.**.*****.*.*.*.*****.*.*.*.***.*.****.*.*.*.******.****.**.*.**.**.****.****.**.*.*.*.**.**.*.*.*.**.***.***.*.****.****.***.***.*.****.*.***.***.**.*.*.*.* -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       3.374
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.962     0.008      0.977     0.962     0.97       0.977    slow_walking
+                 0.941     0.014      0.926     0.941     0.933      0.964    fast_walking
+                 0.986     0.013      0.977     0.986     0.982      0.987    slow_running
+                 0.966     0.007      0.96      0.966     0.963      0.979    fast_running
+                 0.918     0.001      0.982     0.918     0.949      0.959    upstairs
+                 0.976     0.002      0.952     0.976     0.964      0.987    downstairs
+Weighted Avg.    0.966     0.01       0.966     0.966     0.966      0.978
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 303  11   0   1   0   0 |   a = slow_walking
+   4 175   5   1   1   0 |   b = fast_walking
+   0   2 432   4   0   0 |   c = slow_running
+   0   1   5 168   0   0 |   d = fast_running
+   3   0   0   0  56   2 |   e = upstairs
+   0   0   0   1   0  40 |   f = downstairs
+
+
+Correctly Classified Instances        1174               96.6255 %
+Incorrectly Classified Instances        41                3.3745 %
+Kappa statistic                          0.9553
+Total Cost                              19.4   
+Average Cost                             0.016 
+Mean absolute error                      0.0112
+Root mean squared error                  0.1061
+Relative absolute error                  4.4656 %
+Root relative squared error             29.8934 %
+Coverage of cases (0.95 level)          96.6255 %
+Mean rel. region size (0.95 level)      16.6667 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3306 %
+Root relative squared error             33.0328 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.98
+.*.***.*.**.*.***.*.*.*.*.**.*.*.**.**.***.*.*.*.*.**.*.*.****.***.**.*.*.*.*.*.*.*.*.*.**.*.*.**.*.**.**.**.**.**.*.*.*.*.*.*.*.*.***.*.*.*.*.*.*.**.**.*.*.*.*.***.***.**.*.*.*.**.**.*.*.**.*.*.**.*.**.*.***.*.*.*.*.*.*.*.**.***.*.*.***.*.*.*.*.**.*.*.* -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       4.033
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.959     0.01       0.971     0.959     0.965      0.974    slow_walking
+                 0.941     0.014      0.926     0.941     0.933      0.964    fast_walking
+                 0.986     0.01       0.982     0.986     0.984      0.988    slow_running
+                 0.966     0.012      0.928     0.966     0.946      0.977    fast_running
+                 0.902     0.003      0.948     0.902     0.924      0.95     upstairs
+                 0.829     0.002      0.944     0.829     0.883      0.914    downstairs
+Weighted Avg.    0.96      0.01       0.96      0.96      0.96       0.975
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 302  11   0   2   0   0 |   a = slow_walking
+   5 175   3   3   0   0 |   b = fast_walking
+   0   2 432   4   0   0 |   c = slow_running
+   0   1   5 168   0   0 |   d = fast_running
+   4   0   0   0  55   2 |   e = upstairs
+   0   0   0   4   3  34 |   f = downstairs
+
+
+Correctly Classified Instances        1166               95.9671 %
+Incorrectly Classified Instances        49                4.0329 %
+Kappa statistic                          0.9466
+Total Cost                              26.5   
+Average Cost                             0.0218
+Mean absolute error                      0.0134
+Root mean squared error                  0.1159
+Relative absolute error                  5.337  %
+Root relative squared error             32.6799 %
+Coverage of cases (0.95 level)          95.9671 %
+Mean rel. region size (0.95 level)      16.6667 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3318 %
+Root relative squared error             33.0398 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.98
+**.****.***.***.*.***.****.****.*.*.******.****.***.***.*.****.****.***.***.*.****.****.***.***.*.****.****.***.***.*.**.*.*.*.*.**************.****.***.*.*.**.**.****.****.*.*.*****.****.**.**.*.*.**** -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       3.045
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.962     0.007      0.981     0.962     0.971      0.978    slow_walking
+                 0.957     0.011      0.942     0.957     0.949      0.973    fast_walking
+                 0.991     0.014      0.975     0.991     0.983      0.988    slow_running
+                 0.96      0.005      0.971     0.96      0.965      0.977    fast_running
+                 0.934     0.003      0.95      0.934     0.942      0.966    upstairs
+                 0.951     0.001      0.975     0.951     0.963      0.975    downstairs
+Weighted Avg.    0.97      0.009      0.97      0.97      0.97       0.98 
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 303  10   0   1   1   0 |   a = slow_walking
+   3 178   4   1   0   0 |   b = fast_walking
+   0   1 434   3   0   0 |   c = slow_running
+   0   0   7 167   0   0 |   d = fast_running
+   3   0   0   0  57   1 |   e = upstairs
+   0   0   0   0   2  39 |   f = downstairs
+
+
+Correctly Classified Instances        1178               96.9547 %
+Incorrectly Classified Instances        37                3.0453 %
+Kappa statistic                          0.9596
+Total Cost                              16.3   
+Average Cost                             0.0134
+Mean absolute error                      0.0102
+Root mean squared error                  0.1008
+Relative absolute error                  4.03   %
+Root relative squared error             28.3978 %
+Coverage of cases (0.95 level)          96.9547 %
+Mean rel. region size (0.95 level)      16.6667 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.331  %
+Root relative squared error             33.0349 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.98
+****.****.***.**.*.***.****.***.***.*.****.****.***.***.*.**.*.*.*.*.*************.****.******.*.***.****.****.*.*.****.*****.*.*.*.***************.***.**.*.****.****.***.**.**.*******.***.***.*.** -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       2.716
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.971     0.007      0.981     0.971     0.976      0.982    slow_walking
+                 0.968     0.01       0.947     0.968     0.957      0.979    fast_walking
+                 0.989     0.013      0.977     0.989     0.983      0.988    slow_running
+                 0.96      0.004      0.977     0.96      0.968      0.978    fast_running
+                 0.934     0.002      0.966     0.934     0.95       0.966    upstairs
+                 0.951     0.001      0.975     0.951     0.963      0.975    downstairs
+Weighted Avg.    0.973     0.009      0.973     0.973     0.973      0.982
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 306   9   0   0   0   0 |   a = slow_walking
+   3 180   3   0   0   0 |   b = fast_walking
+   0   1 433   4   0   0 |   c = slow_running
+   0   0   7 167   0   0 |   d = fast_running
+   3   0   0   0  57   1 |   e = upstairs
+   0   0   0   0   2  39 |   f = downstairs
+
+
+Correctly Classified Instances        1182               97.284  %
+Incorrectly Classified Instances        33                2.716  %
+Kappa statistic                          0.964 
+Total Cost                              12.3   
+Average Cost                             0.0101
+Mean absolute error                      0.0091
+Root mean squared error                  0.0951
+Relative absolute error                  3.5943 %
+Root relative squared error             26.8188 %
+Coverage of cases (0.95 level)          97.284  %
+Mean rel. region size (0.95 level)      16.6667 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3317 %
+Root relative squared error             33.0392 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99
+ -1       0.136
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.008      0.998     1         0.999      0.996    moving
+                 0.992     0          1         0.992     0.996      0.996    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.006      0.999     0.999     0.999      0.996
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    2  257    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1472               99.8643 %
+Incorrectly Classified Instances         2                0.1357 %
+Kappa statistic                          0.9953
+Mean absolute error                      0.0009
+Root mean squared error                  0.0301
+Relative absolute error                  0.467  %
+Root relative squared error              9.6788 %
+Coverage of cases (0.95 level)          99.8643 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.165
+ -0.904   0.247
+ -0.868   0.329
+ -0.864   0.412
+ -0.84    0.494
+ -0.776   0.576
+ -0.772   0.658
+ -0.592   0.741
+ -0.484   0.823
+ -0.476   0.905
+ -0.404   0.988
+ -0.368   1.07 
+ -0.352   1.152
+ -0.344   1.317
+ -0.3     1.399
+ -0.284   1.481
+ -0.276   1.564
+ -0.208   1.646
+ -0.192   1.728
+ -0.128   1.811
+ -0.12    1.893
+ -0.108   1.975
+ -0.084   2.058
+ -0.068   2.14 
+ -0.036   2.222
+  0.016   2.305
+  0.056   2.387
+  0.06    2.469
+  0.088   2.551
+  0.096   2.634
+  0.104   2.716
+  0.108   2.798
+  0.112   2.881
+  0.128   2.963
+  0.144   3.045
+  0.152   3.128
+  0.176   3.21 
+  0.184   3.292
+  0.228   3.374
+  0.236   3.621
+  0.24    3.704
+  0.248   3.786
+  0.28    3.951
+  0.292   4.033
+  0.3     4.115
+  0.308   4.28 
+  0.312   4.362
+  0.316   4.444
+  0.336   4.609
+  0.344   4.691
+  0.348   4.856
+  0.38    4.938
+  0.384   5.021
+  0.388   5.103
+  0.4     5.267
+  0.404   5.35 
+  0.412   5.679
+  0.424   5.844
+  0.432   6.091
+  0.44    6.255
+  0.444   6.42 
+  0.452   6.584
+  0.456   6.914
+  0.46    6.996
+  0.472   7.078
+  0.484   7.325
+  0.488   7.49 
+  0.516   7.654
+  0.52    7.819
+  0.528   7.901
+  0.532   7.984
+  0.564   8.066
+  0.568   8.23 
+  0.572   8.313
+  0.576   8.395
+  0.58    8.477
+  0.6     8.642
+  0.604   8.724
+  0.612   8.889
+  0.616   8.971
+  0.62    9.136
+  0.624   9.218
+  0.628   9.3  
+  0.632   9.547
+  0.64    9.794
+  0.652   9.959
+  0.656  10.288
+  0.66   10.453
+  0.668  10.535
+  0.672  10.7  
+  0.676  10.782
+  0.68   10.864
+  0.684  11.029
+  0.688  11.111
+  0.696  11.193
+  0.7    11.276
+  0.704  11.44 
+  0.708  11.687
+  0.712  11.852
+  0.716  12.263
+  0.72   12.346
+  0.728  12.428
+  0.732  12.593
+  0.736  12.675
+  0.74   12.84 
+  0.744  12.922
+  0.748  13.251
+  0.752  13.416
+  0.756  13.827
+  0.76   13.909
+  0.764  13.992
+  0.768  14.156
+  0.772  14.486
+  0.776  14.733
+  0.78   15.062
+  0.784  15.391
+  0.788  15.556
+  0.792  15.802
+  0.796  16.049
+  0.8    16.296
+  0.804  16.708
+  0.808  16.955
+  0.812  17.449
+  0.816  17.778
+  0.82   18.354
+  0.824  18.519
+  0.828  18.848
+  0.832  19.095
+  0.836  19.342
+  0.84   19.671
+  0.844  20.082
+  0.848  20.658
+  0.852  20.988
+  0.856  21.07 
+  0.86   21.399
+  0.864  21.893
+  0.868  22.058
+  0.872  22.387
+  0.876  22.716
+  0.88   23.045
+  0.884  23.292
+  0.888  23.539
+  0.892  23.951
+  0.896  24.362
+  0.904  24.938
+  0.908  25.267
+  0.912  25.844
+  0.916  26.091
+  0.92   26.667
+  0.924  27.407
+  0.928  27.901
+  0.932  28.313
+  0.936  28.807
+  0.94   29.383
+  0.944  30.288
+  0.948  31.276
+  0.952  32.346
+  0.956  33.004
+  0.96   33.827
+  0.964  34.815
+  0.968  35.473
+  0.972  36.049
+  0.976  37.449
+  0.98   39.753
+  0.984  42.058
+  0.988  44.774
+  0.992  48.642
+  0.996 100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.978     0.007      0.981     0.978     0.979      0.999    slow_walking
+                 0.973     0.009      0.953     0.973     0.963      0.999    fast_walking
+                 0.993     0.012      0.98      0.993     0.986      0.998    slow_running
+                 0.954     0.001      0.994     0.954     0.974      0.997    fast_running
+                 0.951     0.001      0.983     0.951     0.967      0.998    upstairs
+                 0.976     0.001      0.976     0.976     0.976      1        downstairs
+Weighted Avg.    0.978     0.007      0.978     0.978     0.978      0.998
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 308   7   0   0   0   0 |   a = slow_walking
+   4 181   1   0   0   0 |   b = fast_walking
+   0   2 435   1   0   0 |   c = slow_running
+   0   0   8 166   0   0 |   d = fast_running
+   2   0   0   0  58   1 |   e = upstairs
+   0   0   0   0   1  40 |   f = downstairs
+
+
+Correctly Classified Instances        1188               97.7778 %
+Incorrectly Classified Instances        27                2.2222 %
+Kappa statistic                          0.9705
+Total Cost                               9     
+Average Cost                             0.0074
+Mean absolute error                      0.0202
+Root mean squared error                  0.0844
+Relative absolute error                  8.0354 %
+Root relative squared error             23.7795 %
+Coverage of cases (0.95 level)          99.7531 %
+Mean rel. region size (0.95 level)      21.4678 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3317 %
+Root relative squared error             33.0395 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.412
+ -0.976   0.494
+ -0.94    0.576
+ -0.936   0.658
+ -0.668   0.741
+ -0.572   0.823
+ -0.504   0.905
+ -0.464   0.988
+ -0.44    1.07 
+ -0.344   1.152
+ -0.18    1.235
+ -0.124   1.317
+ -0.084   1.399
+ -0.036   1.481
+ -0.028   1.564
+  0.212   1.646
+  0.384   1.728
+  0.388   1.893
+  0.4     1.975
+  0.488   2.058
+  0.564   2.14 
+  0.576   2.222
+  0.6     2.305
+  0.604   2.387
+  0.632   2.469
+  0.636   2.551
+  0.644   2.634
+  0.656   2.798
+  0.672   2.881
+  0.68    2.963
+  0.696   3.045
+  0.704   3.128
+  0.708   3.21 
+  0.756   3.292
+  0.784   3.374
+  0.808   3.457
+  0.812   3.539
+  0.82    3.621
+  0.828   3.704
+  0.832   3.786
+  0.844   3.868
+  0.848   3.951
+  0.856   4.033
+  0.876   4.198
+  0.884   4.28 
+  0.892   4.444
+  0.896   4.609
+  0.9     4.856
+  0.904   4.938
+  0.908   5.103
+  0.912   5.267
+  0.916   5.597
+  0.92    5.679
+  0.924   5.926
+  0.932   6.091
+  0.936   6.42 
+  0.94    6.502
+  0.944   6.667
+  0.948   6.831
+  0.952   7.243
+  0.956   7.407
+  0.96    7.737
+  0.964   8.148
+  0.968   8.807
+  0.972   8.971
+  0.976   9.959
+  0.98   11.193
+  0.984  12.099
+  0.988  13.909
+  0.992  18.601
+  0.996 100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.99      0.004      0.987     0.99      0.989      1        slow_walking
+                 0.989     0.003      0.984     0.989     0.987      1        fast_walking
+                 0.995     0.013      0.978     0.995     0.986      0.999    slow_running
+                 0.943     0.002      0.988     0.943     0.965      0.999    fast_running
+                 0.967     0          1         0.967     0.983      1        upstairs
+                 1         0          1         1         1          1        downstairs
+Weighted Avg.    0.984     0.007      0.984     0.984     0.984      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 312   3   0   0   0   0 |   a = slow_walking
+   2 184   0   0   0   0 |   b = fast_walking
+   0   0 436   2   0   0 |   c = slow_running
+   0   0  10 164   0   0 |   d = fast_running
+   2   0   0   0  59   0 |   e = upstairs
+   0   0   0   0   0  41 |   f = downstairs
+
+
+Correctly Classified Instances        1196               98.4362 %
+Incorrectly Classified Instances        19                1.5638 %
+Kappa statistic                          0.9792
+Total Cost                               3.7   
+Average Cost                             0.003 
+Mean absolute error                      0.0064
+Root mean squared error                  0.0618
+Relative absolute error                  2.5282 %
+Root relative squared error             17.4314 %
+Coverage of cases (0.95 level)          99.3416 %
+Mean rel. region size (0.95 level)      17.3525 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3312 %
+Root relative squared error             33.0361 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.165
+ -0.996   0.247
+ -0.972   0.329
+ -0.944   0.412
+ -0.932   0.576
+ -0.912   0.658
+ -0.896   0.741
+ -0.308   0.823
+ -0.2     0.905
+ -0.084   0.988
+  0       1.07 
+  0.028   1.152
+  0.116   1.235
+  0.192   1.399
+  0.232   1.481
+  0.264   1.564
+  0.304   1.646
+  0.42    1.728
+  0.44    1.811
+  0.46    1.893
+  0.512   2.058
+  0.544   2.14 
+  0.564   2.222
+  0.572   2.305
+  0.704   2.387
+  0.716   2.469
+  0.728   2.551
+  0.76    2.716
+  0.772   2.798
+  0.784   2.881
+  0.792   2.963
+  0.804   3.045
+  0.86    3.128
+  0.864   3.21 
+  0.868   3.374
+  0.884   3.457
+  0.892   3.539
+  0.896   3.621
+  0.904   3.704
+  0.908   3.786
+  0.912   3.868
+  0.916   4.033
+  0.92    4.115
+  0.924   4.198
+  0.928   4.362
+  0.932   4.444
+  0.936   4.527
+  0.94    4.691
+  0.944   4.856
+  0.948   4.938
+  0.952   5.021
+  0.956   5.267
+  0.96    5.514
+  0.964   5.844
+  0.968   6.337
+  0.972   6.584
+  0.976   6.749
+  0.98    7.16 
+  0.984   7.984
+  0.988   8.807
+  0.992  11.852
+  0.996  99.918
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.99      0.001      0.997     0.99      0.994      1        slow_walking
+                 0.995     0.003      0.984     0.995     0.989      1        fast_walking
+                 1         0.01       0.982     1         0.991      1        slow_running
+                 0.96      0          1         0.96      0.979      1        fast_running
+                 0.984     0          1         0.984     0.992      1        upstairs
+                 1         0          1         1         1          1        downstairs
+Weighted Avg.    0.99      0.004      0.99      0.99      0.99       1    
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 312   3   0   0   0   0 |   a = slow_walking
+   0 185   1   0   0   0 |   b = fast_walking
+   0   0 438   0   0   0 |   c = slow_running
+   0   0   7 167   0   0 |   d = fast_running
+   1   0   0   0  60   0 |   e = upstairs
+   0   0   0   0   0  41 |   f = downstairs
+
+
+Correctly Classified Instances        1203               99.0123 %
+Incorrectly Classified Instances        12                0.9877 %
+Kappa statistic                          0.9869
+Total Cost                               3     
+Average Cost                             0.0025
+Mean absolute error                      0.0051
+Root mean squared error                  0.0568
+Relative absolute error                  2.0439 %
+Root relative squared error             16.0056 %
+Coverage of cases (0.95 level)          99.3416 %
+Mean rel. region size (0.95 level)      17.1742 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3315 %
+Root relative squared error             33.0381 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0    
+ -0.992   0.082
+ -0.98    0.165
+ -0.92    0.247
+ -0.896   0.329
+ -0.844   0.412
+ -0.808   0.494
+ -0.748   0.576
+ -0.62    0.658
+ -0.588   0.741
+ -0.532   0.823
+ -0.436   0.905
+ -0.4     0.988
+ -0.328   1.07 
+ -0.288   1.152
+ -0.272   1.235
+ -0.22    1.317
+ -0.16    1.399
+ -0.14    1.481
+ -0.08    1.564
+ -0.012   1.646
+ -0.008   1.728
+  0.008   1.811
+  0.148   1.893
+  0.288   1.975
+  0.296   2.14 
+  0.316   2.305
+  0.332   2.469
+  0.336   2.551
+  0.352   2.634
+  0.368   2.798
+  0.384   2.881
+  0.396   2.963
+  0.4     3.045
+  0.416   3.128
+  0.468   3.292
+  0.472   3.374
+  0.476   3.457
+  0.48    3.539
+  0.504   3.621
+  0.52    3.704
+  0.532   3.786
+  0.54    3.868
+  0.544   3.951
+  0.548   4.033
+  0.56    4.115
+  0.572   4.198
+  0.592   4.28 
+  0.596   4.362
+  0.6     4.444
+  0.624   4.527
+  0.628   4.609
+  0.632   4.691
+  0.676   4.774
+  0.68    4.856
+  0.692   4.938
+  0.696   5.103
+  0.7     5.185
+  0.704   5.432
+  0.708   5.597
+  0.712   5.679
+  0.716   5.761
+  0.724   5.844
+  0.728   6.008
+  0.732   6.255
+  0.736   6.337
+  0.744   6.42 
+  0.748   6.584
+  0.752   6.667
+  0.756   6.749
+  0.76    6.914
+  0.764   6.996
+  0.776   7.078
+  0.78    7.16 
+  0.788   7.243
+  0.792   7.325
+  0.8     7.407
+  0.804   7.49 
+  0.808   7.572
+  0.812   7.654
+  0.816   7.737
+  0.82    7.819
+  0.828   7.984
+  0.832   8.148
+  0.836   8.56 
+  0.84    8.724
+  0.844   8.807
+  0.848   8.889
+  0.856   8.971
+  0.864   9.136
+  0.868   9.383
+  0.872   9.63 
+  0.876   9.959
+  0.88   10.123
+  0.884  10.37 
+  0.888  10.617
+  0.892  10.782
+  0.896  10.947
+  0.9    11.358
+  0.904  11.934
+  0.908  12.181
+  0.912  12.428
+  0.916  12.922
+  0.92   13.169
+  0.924  13.827
+  0.932  14.156
+  0.936  14.486
+  0.94   15.309
+  0.944  15.967
+  0.948  16.872
+  0.952  17.695
+  0.956  18.272
+  0.96   20.082
+  0.964  20.823
+  0.968  21.317
+  0.972  23.292
+  0.976  24.691
+  0.98   26.337
+  0.984  29.218
+  0.988  33.58 
+  0.992  40.329
+  0.996 100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.984     0.006      0.984     0.984     0.984      0.999    slow_walking
+                 0.973     0.006      0.968     0.973     0.971      0.998    fast_walking
+                 0.998     0.012      0.98      0.998     0.989      1        slow_running
+                 0.954     0          1         0.954     0.976      1        fast_running
+                 0.967     0          1         0.967     0.983      1        upstairs
+                 1         0.001      0.976     1         0.988      1        downstairs
+Weighted Avg.    0.983     0.007      0.983     0.983     0.983      0.999
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 310   5   0   0   0   0 |   a = slow_walking
+   4 181   1   0   0   0 |   b = fast_walking
+   0   1 437   0   0   0 |   c = slow_running
+   0   0   8 166   0   0 |   d = fast_running
+   1   0   0   0  59   1 |   e = upstairs
+   0   0   0   0   0  41 |   f = downstairs
+
+
+Correctly Classified Instances        1194               98.2716 %
+Incorrectly Classified Instances        21                1.7284 %
+Kappa statistic                          0.9771
+Total Cost                               5.7   
+Average Cost                             0.0047
+Mean absolute error                      0.0108
+Root mean squared error                  0.0666
+Relative absolute error                  4.2828 %
+Root relative squared error             18.7858 %
+Coverage of cases (0.95 level)          99.6708 %
+Mean rel. region size (0.95 level)      18.6831 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3317 %
+Root relative squared error             33.0391 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0    
+ -0.996   0.082
+ -0.988   0.165
+ -0.98    0.247
+ -0.972   0.329
+ -0.968   0.494
+ -0.964   0.576
+ -0.956   0.658
+ -0.936   0.741
+ -0.896   0.823
+ -0.884   0.905
+ -0.836   0.988
+ -0.832   1.07 
+ -0.828   1.152
+ -0.812   1.235
+ -0.796   1.317
+ -0.788   1.399
+ -0.76    1.481
+ -0.748   1.564
+ -0.74    1.646
+ -0.72    1.728
+ -0.7     1.811
+ -0.696   1.893
+ -0.692   1.975
+ -0.648   2.14 
+ -0.612   2.305
+ -0.608   2.387
+ -0.592   2.469
+ -0.58    2.551
+ -0.572   2.634
+ -0.548   2.716
+ -0.536   2.798
+ -0.5     2.881
+ -0.484   3.045
+ -0.476   3.292
+ -0.468   3.539
+ -0.464   3.621
+ -0.42    3.704
+ -0.412   3.786
+ -0.392   3.868
+ -0.38    3.951
+ -0.372   4.033
+ -0.324   4.115
+ -0.312   4.198
+ -0.272   4.444
+ -0.248   4.527
+ -0.244   4.609
+ -0.224   4.691
+ -0.216   4.774
+ -0.152   4.856
+ -0.148   4.938
+ -0.144   5.021
+ -0.12    5.103
+ -0.112   5.185
+ -0.108   5.35 
+ -0.072   5.432
+ -0.06    5.514
+ -0.056   5.597
+ -0.052   5.679
+ -0.028   5.761
+ -0.02    5.844
+ -0.004   6.008
+  0.016   6.091
+  0.024   6.173
+  0.032   6.337
+  0.036   6.502
+  0.04    6.749
+  0.056   6.831
+  0.076   6.914
+  0.084   6.996
+  0.152   7.078
+  0.168   7.16 
+  0.176   7.243
+  0.2     7.325
+  0.212   7.49 
+  0.232   7.654
+  0.252   7.819
+  0.256   7.901
+  0.264   7.984
+  0.296   8.066
+  0.3     8.23 
+  0.304   8.313
+  0.308   8.395
+  0.32    8.56 
+  0.324   8.642
+  0.344   8.724
+  0.352   8.807
+  0.364   8.889
+  0.372   9.053
+  0.38    9.136
+  0.408   9.218
+  0.42    9.383
+  0.428   9.465
+  0.432   9.547
+  0.44    9.712
+  0.448   9.877
+  0.46    9.959
+  0.472  10.123
+  0.48   10.206
+  0.484  10.288
+  0.508  10.37 
+  0.512  10.535
+  0.532  10.617
+  0.544  10.782
+  0.548  10.947
+  0.556  11.029
+  0.564  11.193
+  0.576  11.276
+  0.58   11.358
+  0.584  11.523
+  0.588  11.605
+  0.592  12.016
+  0.596  12.263
+  0.6    12.346
+  0.604  12.51 
+  0.612  12.593
+  0.62   13.086
+  0.628  13.169
+  0.636  13.333
+  0.64   13.498
+  0.652  13.745
+  0.656  13.909
+  0.66   14.074
+  0.668  14.239
+  0.672  14.321
+  0.676  14.403
+  0.684  14.65 
+  0.688  14.733
+  0.696  14.897
+  0.7    15.144
+  0.704  15.309
+  0.708  15.473
+  0.712  15.638
+  0.72   15.802
+  0.728  15.885
+  0.74   15.967
+  0.748  16.132
+  0.752  16.296
+  0.756  16.626
+  0.764  16.708
+  0.768  16.872
+  0.772  16.955
+  0.776  17.037
+  0.78   17.202
+  0.788  17.449
+  0.792  17.695
+  0.796  18.025
+  0.8    18.354
+  0.804  18.765
+  0.808  19.671
+  0.812  20    
+  0.816  20.658
+  0.82   21.564
+  0.824  21.811
+  0.828  22.387
+  0.832  22.881
+  0.836  23.21 
+  0.84   23.621
+  0.844  24.115
+  0.848  24.938
+  0.852  25.432
+  0.856  25.926
+  0.86   26.667
+  0.864  27.16 
+  0.868  27.654
+  0.872  28.066
+  0.876  29.218
+  0.88   29.794
+  0.884  30.617
+  0.888  31.193
+  0.892  31.934
+  0.896  33.004
+  0.9    34.156
+  0.904  35.967
+  0.908  36.708
+  0.912  37.449
+  0.916  38.107
+  0.92   39.588
+  0.924  42.634
+  0.928  44.444
+  0.932  46.749
+  0.936  47.49 
+  0.94   48.724
+  0.944  49.3  
+  0.948  50.206
+  0.952  51.605
+  0.956  53.086
+  0.96   56.461
+  0.964  58.436
+  0.968  60    
+  0.972  61.317
+  0.976  64.115
+  0.98   67.407
+  0.984  74.568
+  0.988  82.798
+  0.992  87.654
+  0.996 100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.94      0.029      0.919     0.94      0.929      0.994    slow_walking
+                 0.866     0.018      0.894     0.866     0.88       0.985    fast_walking
+                 0.995     0.013      0.978     0.995     0.986      0.997    slow_running
+                 0.966     0.001      0.994     0.966     0.98       0.982    fast_running
+                 0.787     0.009      0.828     0.787     0.807      0.99     upstairs
+                 0.805     0.006      0.825     0.805     0.815      0.997    downstairs
+Weighted Avg.    0.94      0.016      0.939     0.94      0.94       0.992
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 296  18   0   0   1   0 |   a = slow_walking
+  20 161   3   0   2   0 |   b = fast_walking
+   0   1 436   1   0   0 |   c = slow_running
+   0   0   6 168   0   0 |   d = fast_running
+   6   0   0   0  48   7 |   e = upstairs
+   0   0   1   0   7  33 |   f = downstairs
+
+
+Correctly Classified Instances        1142               93.9918 %
+Incorrectly Classified Instances        73                6.0082 %
+Kappa statistic                          0.9202
+Total Cost                              32.5   
+Average Cost                             0.0267
+Mean absolute error                      0.0333
+Root mean squared error                  0.1225
+Relative absolute error                 13.2282 %
+Root relative squared error             34.5304 %
+Coverage of cases (0.95 level)          99.177  %
+Mean rel. region size (0.95 level)      23.251  %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3318 %
+Root relative squared error             33.0398 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.97
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.165
+ -0.996   0.247
+ -0.98    0.329
+ -0.968   0.412
+ -0.764   0.494
+ -0.76    0.576
+ -0.752   0.658
+ -0.748   0.741
+ -0.672   0.823
+ -0.648   0.905
+ -0.628   0.988
+ -0.62    1.07 
+ -0.616   1.152
+ -0.612   1.235
+ -0.54    1.317
+ -0.52    1.399
+ -0.504   1.481
+ -0.468   1.564
+ -0.46    1.646
+ -0.388   1.811
+ -0.272   1.893
+ -0.264   1.975
+ -0.236   2.058
+ -0.228   2.14 
+ -0.22    2.222
+ -0.204   2.305
+ -0.128   2.387
+ -0.072   2.469
+  0.024   2.551
+  0.036   2.634
+  0.076   2.716
+  0.08    2.798
+  0.104   2.881
+  0.112   3.045
+  0.176   3.128
+  0.192   3.21 
+  0.232   3.292
+  0.244   3.374
+  0.324   3.457
+  0.368   3.539
+  0.376   3.621
+  0.408   3.704
+  0.412   3.786
+  0.42    3.951
+  0.428   4.033
+  0.44    4.115
+  0.464   4.198
+  0.492   4.28 
+  0.496   4.362
+  0.5     4.444
+  0.516   4.527
+  0.528   4.609
+  0.544   4.691
+  0.556   4.774
+  0.564   4.856
+  0.568   4.938
+  0.576   5.021
+  0.58    5.103
+  0.584   5.185
+  0.596   5.35 
+  0.604   5.432
+  0.608   5.514
+  0.66    5.679
+  0.688   5.761
+  0.696   5.844
+  0.7     5.926
+  0.712   6.091
+  0.736   6.173
+  0.74    6.337
+  0.748   6.502
+  0.752   6.584
+  0.76    6.667
+  0.764   6.831
+  0.768   6.914
+  0.776   6.996
+  0.78    7.243
+  0.788   7.407
+  0.796   7.572
+  0.8     7.654
+  0.804   7.819
+  0.812   7.901
+  0.816   7.984
+  0.828   8.23 
+  0.832   8.477
+  0.836   8.56 
+  0.84    8.971
+  0.844   9.218
+  0.848   9.3  
+  0.852   9.465
+  0.856   9.959
+  0.86   10.041
+  0.864  10.288
+  0.868  10.7  
+  0.872  10.782
+  0.876  11.111
+  0.88   11.523
+  0.884  11.687
+  0.888  12.263
+  0.892  12.84 
+  0.896  13.004
+  0.9    13.416
+  0.904  13.58 
+  0.908  14.074
+  0.912  14.568
+  0.916  14.897
+  0.92   15.72 
+  0.924  16.132
+  0.928  17.037
+  0.932  18.436
+  0.936  19.671
+  0.94   21.152
+  0.944  22.634
+  0.948  24.691
+  0.952  26.42 
+  0.956  29.218
+  0.96   31.193
+  0.964  34.156
+  0.968  37.119
+  0.972  41.975
+  0.976  47.078
+  0.98   52.51 
+  0.984  57.613
+  0.988  65.103
+  0.992  76.626
+  0.996 100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.984     0.009      0.975     0.984     0.979      1        slow_walking
+                 0.957     0.005      0.973     0.957     0.965      0.999    fast_walking
+                 0.993     0.009      0.984     0.993     0.989      0.997    slow_running
+                 0.96      0.002      0.988     0.96      0.974      0.992    fast_running
+                 0.967     0.006      0.894     0.967     0.929      0.999    upstairs
+                 0.878     0.001      0.973     0.878     0.923      0.999    downstairs
+Weighted Avg.    0.975     0.007      0.976     0.975     0.975      0.997
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 310   4   0   0   1   0 |   a = slow_walking
+   7 178   0   0   1   0 |   b = fast_walking
+   0   1 435   2   0   0 |   c = slow_running
+   0   0   7 167   0   0 |   d = fast_running
+   1   0   0   0  59   1 |   e = upstairs
+   0   0   0   0   5  36 |   f = downstairs
+
+
+Correctly Classified Instances        1185               97.5309 %
+Incorrectly Classified Instances        30                2.4691 %
+Kappa statistic                          0.9673
+Total Cost                              12     
+Average Cost                             0.0099
+Mean absolute error                      0.0153
+Root mean squared error                  0.0802
+Relative absolute error                  6.0686 %
+Root relative squared error             22.6152 %
+Coverage of cases (0.95 level)          99.5062 %
+Mean rel. region size (0.95 level)      19.0535 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3315 %
+Root relative squared error             33.0378 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99
+ -1       0.136
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.008      0.998     1         0.999      0.996    moving
+                 0.992     0          1         0.992     0.996      0.996    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.006      0.999     0.999     0.999      0.996
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    2  257    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1472               99.8643 %
+Incorrectly Classified Instances         2                0.1357 %
+Kappa statistic                          0.9953
+Mean absolute error                      0.0009
+Root mean squared error                  0.0301
+Relative absolute error                  0.467  %
+Root relative squared error              9.6788 %
+Coverage of cases (0.95 level)          99.8643 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.329
+ -0.996   0.741
+ -0.992   1.235
+ -0.972   1.399
+ -0.956   1.481
+ -0.948   1.564
+ -0.924   1.646
+ -0.92    1.728
+ -0.916   1.811
+ -0.908   1.893
+ -0.9     1.975
+ -0.896   2.058
+ -0.888   2.14 
+ -0.88    2.222
+ -0.856   2.387
+ -0.848   2.469
+ -0.844   2.551
+ -0.82    2.716
+ -0.812   2.798
+ -0.808   2.881
+ -0.804   2.963
+ -0.792   3.045
+ -0.784   3.128
+ -0.772   3.292
+ -0.752   3.457
+ -0.74    3.539
+ -0.732   3.621
+ -0.728   3.704
+ -0.692   3.868
+ -0.688   4.115
+ -0.676   4.28 
+ -0.648   4.362
+ -0.632   4.444
+ -0.568   4.527
+ -0.564   4.609
+ -0.528   4.774
+ -0.488   4.856
+ -0.464   4.938
+ -0.46    5.021
+ -0.436   5.103
+ -0.428   5.185
+ -0.424   5.432
+ -0.404   5.514
+ -0.36    5.597
+ -0.352   5.679
+ -0.348   5.761
+ -0.316   5.844
+ -0.268   5.926
+ -0.236   6.008
+ -0.216   6.091
+ -0.18    6.173
+ -0.168   6.337
+ -0.16    6.42 
+ -0.144   6.584
+ -0.132   6.667
+ -0.112   6.749
+ -0.1     6.831
+ -0.092   6.996
+ -0.084   7.078
+ -0.076   7.16 
+ -0.056   7.243
+ -0.052   7.325
+ -0.036   7.407
+ -0.032   7.49 
+ -0.024   7.572
+ -0.012   7.654
+  0.008   7.737
+  0.02    7.819
+  0.024   7.901
+  0.028   8.066
+  0.032   8.148
+  0.056   8.23 
+  0.06    8.395
+  0.068   8.477
+  0.072   8.56 
+  0.08    8.724
+  0.084   8.807
+  0.088   8.889
+  0.096   8.971
+  0.1     9.053
+  0.108   9.136
+  0.112   9.218
+  0.116   9.3  
+  0.12    9.383
+  0.132   9.547
+  0.14    9.63 
+  0.156   9.877
+  0.164  10.041
+  0.172  10.123
+  0.18   10.206
+  0.188  10.288
+  0.208  10.37 
+  0.232  10.535
+  0.236  10.617
+  0.248  10.7  
+  0.276  10.782
+  0.28   10.864
+  0.288  10.947
+  0.304  11.029
+  0.308  11.111
+  0.324  11.193
+  0.34   11.276
+  0.344  11.358
+  0.348  11.523
+  0.356  11.687
+  0.36   11.77 
+  0.372  11.852
+  0.38   11.934
+  0.392  12.016
+  0.396  12.099
+  0.4    12.346
+  0.412  12.51 
+  0.416  12.593
+  0.424  12.675
+  0.428  12.84 
+  0.432  12.922
+  0.436  13.004
+  0.46   13.086
+  0.464  13.251
+  0.468  13.333
+  0.472  13.416
+  0.48   13.498
+  0.484  13.58 
+  0.5    13.745
+  0.504  13.827
+  0.516  13.909
+  0.52   13.992
+  0.528  14.074
+  0.54   14.156
+  0.544  14.239
+  0.556  14.321
+  0.568  14.486
+  0.58   14.568
+  0.584  14.65 
+  0.588  14.733
+  0.596  14.815
+  0.604  14.897
+  0.608  14.979
+  0.612  15.062
+  0.624  15.144
+  0.628  15.473
+  0.632  15.72 
+  0.636  15.802
+  0.64   15.967
+  0.644  16.132
+  0.648  16.379
+  0.652  16.461
+  0.656  16.626
+  0.66   16.708
+  0.664  16.955
+  0.668  17.119
+  0.672  17.284
+  0.676  17.366
+  0.684  17.449
+  0.692  17.695
+  0.696  17.86 
+  0.7    17.942
+  0.704  18.107
+  0.708  18.272
+  0.712  18.601
+  0.716  18.683
+  0.72   18.848
+  0.724  19.177
+  0.732  19.424
+  0.736  19.588
+  0.74   19.918
+  0.744  20.082
+  0.748  20.412
+  0.752  20.658
+  0.756  20.823
+  0.76   21.317
+  0.764  21.481
+  0.768  21.646
+  0.772  21.811
+  0.776  22.058
+  0.78   22.551
+  0.784  22.881
+  0.788  22.963
+  0.796  23.292
+  0.8    23.868
+  0.804  24.115
+  0.808  24.362
+  0.812  24.444
+  0.816  24.527
+  0.82   24.938
+  0.824  26.337
+  0.828  26.667
+  0.832  27.078
+  0.836  27.325
+  0.84   27.901
+  0.844  28.313
+  0.848  28.56 
+  0.852  29.547
+  0.856  30.206
+  0.86   30.864
+  0.864  31.687
+  0.868  32.675
+  0.872  33.169
+  0.876  33.498
+  0.88   34.486
+  0.884  35.391
+  0.888  36.461
+  0.892  37.449
+  0.896  39.506
+  0.9    40.412
+  0.904  41.235
+  0.908  42.551
+  0.912  44.033
+  0.916  45.761
+  0.92   47.325
+  0.924  48.642
+  0.928  49.712
+  0.932  50.864
+  0.936  52.016
+  0.94   53.416
+  0.944  55.391
+  0.948  57.942
+  0.952  60.412
+  0.956  62.222
+  0.96   64.198
+  0.964  66.42 
+  0.968  67.407
+  0.972  70.206
+  0.976  72.346
+  0.98   75.638
+  0.984  79.095
+  0.988  84.527
+  0.992  90.782
+  0.996 100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.949     0.046      0.879     0.949     0.913      0.982    slow_walking
+                 0.737     0.017      0.884     0.737     0.804      0.893    fast_walking
+                 0.998     0.022      0.963     0.998     0.98       0.995    slow_running
+                 0.96      0          1         0.96      0.979      0.983    fast_running
+                 0.869     0.012      0.791     0.869     0.828      0.992    upstairs
+                 0.707     0.003      0.906     0.707     0.795      0.997    downstairs
+Weighted Avg.    0.923     0.023      0.924     0.923     0.922      0.974
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 299  16   0   0   0   0 |   a = slow_walking
+  36 137  10   0   3   0 |   b = fast_walking
+   0   1 437   0   0   0 |   c = slow_running
+   0   1   6 167   0   0 |   d = fast_running
+   5   0   0   0  53   3 |   e = upstairs
+   0   0   1   0  11  29 |   f = downstairs
+
+
+Correctly Classified Instances        1122               92.3457 %
+Incorrectly Classified Instances        93                7.6543 %
+Kappa statistic                          0.8979
+Total Cost                              40.8   
+Average Cost                             0.0336
+Mean absolute error                      0.0421
+Root mean squared error                  0.1467
+Relative absolute error                 16.7321 %
+Root relative squared error             41.3383 %
+Coverage of cases (0.95 level)          97.3663 %
+Mean rel. region size (0.95 level)      24.2798 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3314 %
+Root relative squared error             33.0376 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.96
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.247
+ -0.992   0.412
+ -0.98    0.494
+ -0.936   0.576
+ -0.932   0.658
+ -0.908   0.741
+ -0.828   0.823
+ -0.776   0.905
+ -0.716   0.988
+ -0.68    1.07 
+ -0.572   1.235
+ -0.528   1.317
+ -0.492   1.399
+ -0.48    1.481
+ -0.436   1.564
+ -0.428   1.646
+ -0.372   1.728
+ -0.32    1.811
+ -0.308   1.893
+ -0.272   1.975
+ -0.268   2.058
+ -0.228   2.14 
+ -0.156   2.222
+ -0.12    2.305
+  0.02    2.387
+  0.048   2.469
+  0.076   2.551
+  0.124   2.634
+  0.132   2.798
+  0.18    2.881
+  0.2     2.963
+  0.204   3.045
+  0.244   3.128
+  0.26    3.21 
+  0.264   3.292
+  0.332   3.457
+  0.348   3.539
+  0.352   3.621
+  0.364   3.704
+  0.368   3.786
+  0.372   3.868
+  0.38    3.951
+  0.436   4.033
+  0.456   4.115
+  0.548   4.198
+  0.552   4.28 
+  0.556   4.362
+  0.584   4.444
+  0.6     4.527
+  0.62    4.691
+  0.644   4.774
+  0.676   4.856
+  0.688   4.938
+  0.692   5.021
+  0.696   5.103
+  0.724   5.185
+  0.74    5.267
+  0.748   5.597
+  0.764   5.761
+  0.768   5.844
+  0.772   5.926
+  0.776   6.008
+  0.78    6.255
+  0.788   6.42 
+  0.792   6.584
+  0.796   6.831
+  0.804   6.914
+  0.808   7.16 
+  0.812   7.325
+  0.824   7.407
+  0.832   7.49 
+  0.844   7.654
+  0.848   7.819
+  0.852   8.066
+  0.856   8.23 
+  0.86    8.395
+  0.864   8.724
+  0.868   8.807
+  0.872   9.3  
+  0.876   9.383
+  0.88    9.465
+  0.884   9.877
+  0.888  10.37 
+  0.892  10.782
+  0.896  11.358
+  0.9    11.77 
+  0.904  12.593
+  0.908  13.333
+  0.912  14.321
+  0.916  14.65 
+  0.92   15.144
+  0.924  15.885
+  0.928  16.461
+  0.932  17.119
+  0.936  17.778
+  0.94   18.601
+  0.944  20.412
+  0.948  22.305
+  0.952  24.28 
+  0.956  26.255
+  0.96   29.465
+  0.964  32.263
+  0.968  36.955
+  0.972  43.374
+  0.976  49.547
+  0.98   60.329
+  0.984  68.724
+  0.988  76.049
+  0.992  84.691
+  0.996 100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.975     0.01       0.972     0.975     0.973      0.999    slow_walking
+                 0.952     0.008      0.957     0.952     0.954      0.998    fast_walking
+                 0.993     0.009      0.984     0.993     0.989      0.995    slow_running
+                 0.96      0.002      0.988     0.96      0.974      0.99     fast_running
+                 0.984     0.001      0.984     0.984     0.984      1        upstairs
+                 1         0.001      0.976     1         0.988      1        downstairs
+Weighted Avg.    0.977     0.007      0.977     0.977     0.977      0.996
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 307   7   0   0   1   0 |   a = slow_walking
+   9 177   0   0   0   0 |   b = fast_walking
+   0   1 435   2   0   0 |   c = slow_running
+   0   0   7 167   0   0 |   d = fast_running
+   0   0   0   0  60   1 |   e = upstairs
+   0   0   0   0   0  41 |   f = downstairs
+
+
+Correctly Classified Instances        1187               97.6955 %
+Incorrectly Classified Instances        28                2.3045 %
+Kappa statistic                          0.9695
+Total Cost                               5.5   
+Average Cost                             0.0045
+Mean absolute error                      0.0147
+Root mean squared error                  0.08  
+Relative absolute error                  5.8518 %
+Root relative squared error             22.5582 %
+Coverage of cases (0.95 level)          99.3416 %
+Mean rel. region size (0.95 level)      18.6831 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3315 %
+Root relative squared error             33.0382 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99
+ -1       0.136
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.008      0.998     1         0.999      0.996    moving
+                 0.992     0          1         0.992     0.996      0.996    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.006      0.999     0.999     0.999      0.996
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    2  257    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1472               99.8643 %
+Incorrectly Classified Instances         2                0.1357 %
+Kappa statistic                          0.9953
+Mean absolute error                      0.0009
+Root mean squared error                  0.0301
+Relative absolute error                  0.467  %
+Root relative squared error              9.6788 %
+Coverage of cases (0.95 level)          99.8643 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       2.058
+ -0.988   2.14 
+ -0.984   2.222
+ -0.98    2.469
+ -0.976   2.716
+ -0.972   2.963
+ -0.968   3.045
+ -0.96    3.21 
+ -0.928   3.292
+ -0.82    3.374
+ -0.804   3.457
+ -0.752   3.539
+ -0.716   3.704
+ -0.668   3.786
+ -0.5     3.868
+ -0.336   4.28 
+  0.332   4.609
+  0.712   5.021
+  0.8     5.267
+  0.816   5.432
+  0.832   5.514
+  0.88    6.008
+  0.888   6.173
+  0.892   6.255
+  0.9     6.749
+  0.904   7.078
+  0.908   7.572
+  0.916   7.737
+  0.924   8.066
+  0.932   8.395
+  0.944   8.642
+  0.948   9.3  
+  0.956  12.099
+  0.96   18.765
+  0.964  18.848
+  0.968  29.877
+  0.972  38.107
+  0.976  42.14 
+  0.984  43.457
+  0.992  46.337
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.978     0.011      0.969     0.978     0.973      0.988    slow_walking
+                 0.93      0.013      0.93      0.93      0.93       0.97     fast_walking
+                 0.977     0.019      0.966     0.977     0.972      0.985    slow_running
+                 0.954     0.004      0.976     0.954     0.965      0.984    fast_running
+                 0.869     0.005      0.898     0.869     0.883      0.964    upstairs
+                 0.854     0.003      0.897     0.854     0.875      0.936    downstairs
+Weighted Avg.    0.957     0.013      0.957     0.957     0.957      0.98 
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 308   2   0   0   4   1 |   a = slow_walking
+   5 173   7   0   0   1 |   b = fast_walking
+   0   6 428   4   0   0 |   c = slow_running
+   0   1   7 166   0   0 |   d = fast_running
+   3   3   0   0  53   2 |   e = upstairs
+   2   1   1   0   2  35 |   f = downstairs
+
+
+Correctly Classified Instances        1163               95.7202 %
+Incorrectly Classified Instances        52                4.2798 %
+Kappa statistic                          0.9432
+Total Cost                              35.8   
+Average Cost                             0.0295
+Mean absolute error                      0.0166
+Root mean squared error                  0.1145
+Relative absolute error                  6.5857 %
+Root relative squared error             32.281  %
+Coverage of cases (0.95 level)          96.5432 %
+Mean rel. region size (0.95 level)      17.1605 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3313 %
+Root relative squared error             33.037  %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.98
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       1.893
+ -0.988   2.058
+ -0.984   2.387
+ -0.976   2.634
+ -0.972   2.963
+ -0.964   3.045
+ -0.952   3.128
+ -0.944   3.374
+ -0.924   3.704
+ -0.912   3.786
+ -0.904   3.868
+ -0.836   3.951
+ -0.82    4.033
+ -0.804   4.28 
+ -0.752   4.444
+ -0.716   4.527
+ -0.668   4.774
+ -0.5     4.938
+ -0.336   5.267
+  0.332   5.432
+  0.5     5.597
+  0.636   5.679
+  0.664   5.926
+  0.712   6.337
+  0.8     6.42 
+  0.832   6.502
+  0.852   7.078
+  0.864   7.16 
+  0.872   7.325
+  0.88    7.572
+  0.9     8.066
+  0.904   9.547
+  0.908  10.37 
+  0.912  11.276
+  0.92   13.086
+  0.924  13.416
+  0.928  13.58 
+  0.932  13.992
+  0.936  14.321
+  0.94   15.967
+  0.944  17.613
+  0.948  18.436
+  0.96   21.975
+  0.964  28.807
+  0.968  41.893
+  0.972  48.395
+  0.98   51.358
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.956     0.02       0.944     0.956     0.95       0.983    slow_walking
+                 0.903     0.02       0.889     0.903     0.896      0.969    fast_walking
+                 0.977     0.013      0.977     0.977     0.977      0.986    slow_running
+                 0.96      0.002      0.988     0.96      0.974      0.985    fast_running
+                 0.852     0.006      0.881     0.852     0.867      0.92     upstairs
+                 0.854     0.005      0.854     0.854     0.854      0.936    downstairs
+Weighted Avg.    0.947     0.014      0.948     0.947     0.947      0.978
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 301   9   0   0   5   0 |   a = slow_walking
+  12 168   2   1   0   3 |   b = fast_walking
+   0   9 428   1   0   0 |   c = slow_running
+   0   1   6 167   0   0 |   d = fast_running
+   4   2   0   0  52   3 |   e = upstairs
+   2   0   2   0   2  35 |   f = downstairs
+
+
+Correctly Classified Instances        1151               94.7325 %
+Incorrectly Classified Instances        64                5.2675 %
+Kappa statistic                          0.9302
+Total Cost                              38.8   
+Average Cost                             0.0319
+Mean absolute error                      0.0207
+Root mean squared error                  0.1265
+Relative absolute error                  8.2248 %
+Root relative squared error             35.6602 %
+Coverage of cases (0.95 level)          95.9671 %
+Mean rel. region size (0.95 level)      17.4074 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3316 %
+Root relative squared error             33.0389 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.97
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       1.646
+ -0.992   1.811
+ -0.988   1.893
+ -0.98    2.222
+ -0.976   2.387
+ -0.972   2.551
+ -0.968   2.634
+ -0.948   2.716
+ -0.94    2.798
+ -0.896   2.881
+ -0.884   3.045
+ -0.836   3.128
+ -0.752   3.21 
+ -0.668   3.374
+ -0.5     3.457
+ -0.336   3.539
+  0.332   3.621
+  0.5     3.704
+  0.664   3.868
+  0.712   4.115
+  0.776   4.362
+  0.816   4.527
+  0.82    4.609
+  0.832   4.856
+  0.892   5.185
+  0.9     5.267
+  0.908   6.008
+  0.912   6.173
+  0.916   6.255
+  0.924   6.502
+  0.928   6.831
+  0.932   7.901
+  0.936   7.984
+  0.94    8.313
+  0.944   8.971
+  0.956  13.498
+  0.96   16.955
+  0.964  20.165
+  0.968  28.23 
+  0.972  38.025
+  0.976  44.115
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.978     0.009      0.975     0.978     0.976      0.989    slow_walking
+                 0.957     0.009      0.952     0.957     0.954      0.98     fast_walking
+                 0.982     0.014      0.975     0.982     0.978      0.986    slow_running
+                 0.966     0.003      0.982     0.966     0.974      0.989    fast_running
+                 0.902     0.009      0.846     0.902     0.873      0.962    upstairs
+                 0.805     0.002      0.943     0.805     0.868      0.91     downstairs
+Weighted Avg.    0.965     0.01       0.965     0.965     0.965      0.982
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 308   2   0   0   5   0 |   a = slow_walking
+   4 178   3   0   0   1 |   b = fast_walking
+   0   4 430   3   1   0 |   c = slow_running
+   0   0   6 168   0   0 |   d = fast_running
+   3   2   0   0  55   1 |   e = upstairs
+   1   1   2   0   4  33 |   f = downstairs
+
+
+Correctly Classified Instances        1172               96.4609 %
+Incorrectly Classified Instances        43                3.5391 %
+Kappa statistic                          0.9531
+Total Cost                              29.5   
+Average Cost                             0.0243
+Mean absolute error                      0.0144
+Root mean squared error                  0.106 
+Relative absolute error                  5.7263 %
+Root relative squared error             29.8836 %
+Coverage of cases (0.95 level)          96.9547 %
+Mean rel. region size (0.95 level)      17.0919 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3321 %
+Root relative squared error             33.0415 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.98
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       1.811
+ -0.988   1.893
+ -0.98    2.387
+ -0.976   2.963
+ -0.972   3.292
+ -0.968   3.539
+ -0.964   3.621
+ -0.948   3.704
+ -0.944   3.868
+ -0.928   3.951
+ -0.92    4.033
+ -0.912   4.115
+ -0.876   4.198
+ -0.836   4.362
+ -0.752   4.527
+ -0.716   4.609
+ -0.668   4.938
+ -0.604   5.103
+ -0.5     5.514
+ -0.336   5.679
+  0.332   5.926
+  0.5     6.091
+  0.6     6.255
+  0.664   6.996
+  0.712   7.407
+  0.816   7.737
+  0.844   7.901
+  0.856   7.984
+  0.892   8.148
+  0.904   8.642
+  0.908   8.807
+  0.916   9.465
+  0.92    9.547
+  0.924  10.37 
+  0.928  10.864
+  0.932  12.263
+  0.94   12.675
+  0.944  13.333
+  0.952  13.663
+  0.956  14.568
+  0.96   25.267
+  0.964  29.794
+  0.968  37.86 
+  0.972  44.609
+  0.976  47.984
+  0.988  52.922
+  0.992  55.802
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.949     0.011      0.968     0.949     0.958      0.986    slow_walking
+                 0.925     0.025      0.869     0.925     0.896      0.959    fast_walking
+                 0.97      0.019      0.966     0.97      0.968      0.982    slow_running
+                 0.954     0.003      0.982     0.954     0.968      0.982    fast_running
+                 0.836     0.008      0.85      0.836     0.843      0.956    upstairs
+                 0.805     0.005      0.846     0.805     0.825      0.94     downstairs
+Weighted Avg.    0.943     0.015      0.944     0.943     0.943      0.977
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 299  11   0   0   5   0 |   a = slow_walking
+   5 172   4   1   2   2 |   b = fast_walking
+   0  10 425   2   0   1 |   c = slow_running
+   0   1   7 166   0   0 |   d = fast_running
+   4   3   0   0  51   3 |   e = upstairs
+   1   1   4   0   2  33 |   f = downstairs
+
+
+Correctly Classified Instances        1146               94.321  %
+Incorrectly Classified Instances        69                5.679  %
+Kappa statistic                          0.9248
+Total Cost                              46.5   
+Average Cost                             0.0383
+Mean absolute error                      0.022 
+Root mean squared error                  0.1313
+Relative absolute error                  8.7263 %
+Root relative squared error             37.014  %
+Coverage of cases (0.95 level)          95.6379 %
+Mean rel. region size (0.95 level)      17.3663 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.331  %
+Root relative squared error             33.0352 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.97
+weka.core.UnsupportedAttributeTypeException: weka.classifiers.functions.LinearRegression: Cannot handle multi-valued nominal class!
+	at weka.core.Capabilities.test(Capabilities.java:937)
+	at weka.core.Capabilities.test(Capabilities.java:1105)
+	at weka.core.Capabilities.test(Capabilities.java:1018)
+	at weka.core.Capabilities.testWithFail(Capabilities.java:1297)
+	at weka.classifiers.functions.LinearRegression.buildClassifier(LinearRegression.java:205)
+	at weka.classifiers.Evaluation.crossValidateModel(Evaluation.java:510)
+	at gla.ac.uk.gac.classification.CrossValidation.build(CrossValidation.java:53)
+	at gla.ac.uk.gac.classification.CrossValidation.onFinish(CrossValidation.java:148)
+	at gla.ac.uk.gac.threading.WorkerThread.run(WorkerThread.java:22)
+	at java.lang.Thread.run(Thread.java:722)
+ -1       0.136
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.008      0.998     1         0.999      0.996    moving
+                 0.992     0          1         0.992     0.996      0.996    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.006      0.999     0.999     0.999      0.996
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    2  257    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1472               99.8643 %
+Incorrectly Classified Instances         2                0.1357 %
+Kappa statistic                          0.9953
+Mean absolute error                      0.0009
+Root mean squared error                  0.0301
+Relative absolute error                  0.467  %
+Root relative squared error              9.6788 %
+Coverage of cases (0.95 level)          99.8643 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          ?        slow_walking
+                 0         0          0         0         0          ?        fast_walking
+                 0         0          0         0         0          ?        slow_running
+                 0         0          0         0         0          ?        fast_running
+                 0         0          0         0         0          ?        upstairs
+                 0         0          0         0         0          ?        downstairs
+Weighted Avg.  NaN       NaN        NaN       NaN       NaN        NaN    
+
+=== Confusion Matrix ===
+
+ a b c d e f   <-- classified as
+ 0 0 0 0 0 0 | a = slow_walking
+ 0 0 0 0 0 0 | b = fast_walking
+ 0 0 0 0 0 0 | c = slow_running
+ 0 0 0 0 0 0 | d = fast_running
+ 0 0 0 0 0 0 | e = upstairs
+ 0 0 0 0 0 0 | f = downstairs
+
+
+Total Number of Instances                0     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3319 %
+Root relative squared error             33.0406 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION NaN
+weka.core.UnsupportedAttributeTypeException: weka.classifiers.functions.LinearRegression: Cannot handle multi-valued nominal class!
+	at weka.core.Capabilities.test(Capabilities.java:937)
+	at weka.core.Capabilities.test(Capabilities.java:1105)
+	at weka.core.Capabilities.test(Capabilities.java:1018)
+	at weka.core.Capabilities.testWithFail(Capabilities.java:1297)
+	at weka.classifiers.functions.LinearRegression.buildClassifier(LinearRegression.java:205)
+	at weka.classifiers.Evaluation.crossValidateModel(Evaluation.java:510)
+	at gla.ac.uk.gac.classification.CrossValidation.build(CrossValidation.java:53)
+	at gla.ac.uk.gac.classification.CrossValidation.onFinish(CrossValidation.java:148)
+	at gla.ac.uk.gac.threading.WorkerThread.run(WorkerThread.java:22)
+	at java.lang.Thread.run(Thread.java:722)
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          ?        slow_walking
+                 0         0          0         0         0          ?        fast_walking
+                 0         0          0         0         0          ?        slow_running
+                 0         0          0         0         0          ?        fast_running
+                 0         0          0         0         0          ?        upstairs
+                 0         0          0         0         0          ?        downstairs
+Weighted Avg.  NaN       NaN        NaN       NaN       NaN        NaN    
+
+=== Confusion Matrix ===
+
+ a b c d e f   <-- classified as
+ 0 0 0 0 0 0 | a = slow_walking
+ 0 0 0 0 0 0 | b = fast_walking
+ 0 0 0 0 0 0 | c = slow_running
+ 0 0 0 0 0 0 | d = fast_running
+ 0 0 0 0 0 0 | e = upstairs
+ 0 0 0 0 0 0 | f = downstairs
+
+
+Total Number of Instances                0     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.331  %
+Root relative squared error             33.0349 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION NaN
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.741
+ -0.804   1.317
+ -0.604   1.893
+ -0.5     2.058
+ -0.4     2.305
+ -0.3     2.551
+ -0.2     2.963
+ -0.104   3.128
+ -0.1     3.21 
+  0       3.539
+  0.1     4.115
+  0.2     4.774
+  0.3     5.267
+  0.4     6.914
+  0.5     7.407
+  0.6     9.959
+  0.7    10.782
+  0.8    20.494
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.978     0.016      0.957     0.978     0.967      0.997    slow_walking
+                 0.946     0.014      0.926     0.946     0.936      0.992    fast_walking
+                 0.986     0.01       0.982     0.986     0.984      0.993    slow_running
+                 0.954     0.001      0.994     0.954     0.974      0.985    fast_running
+                 0.885     0.003      0.947     0.885     0.915      0.998    upstairs
+                 0.951     0          1         0.951     0.975      1        downstairs
+Weighted Avg.    0.967     0.01       0.967     0.967     0.967      0.993
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 308   6   0   0   1   0 |   a = slow_walking
+   8 176   1   1   0   0 |   b = fast_walking
+   0   6 432   0   0   0 |   c = slow_running
+   0   1   7 166   0   0 |   d = fast_running
+   6   1   0   0  54   0 |   e = upstairs
+   0   0   0   0   2  39 |   f = downstairs
+
+
+Correctly Classified Instances        1175               96.7078 %
+Incorrectly Classified Instances        40                3.2922 %
+Kappa statistic                          0.9563
+Total Cost                              21.1   
+Average Cost                             0.0174
+Mean absolute error                      0.0197
+Root mean squared error                  0.0992
+Relative absolute error                  7.8312 %
+Root relative squared error             27.953  %
+Coverage of cases (0.95 level)          99.177  %
+Mean rel. region size (0.95 level)      20.6036 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3311 %
+Root relative squared error             33.0357 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.98
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.329
+ -0.804   0.412
+ -0.604   0.576
+ -0.5     0.741
+ -0.4     0.905
+ -0.2     1.317
+  0       2.058
+  0.1     2.222
+  0.2     3.045
+  0.3     3.21 
+  0.4     4.691
+  0.5     5.35 
+  0.6     8.477
+  0.7    10.041
+  0.8    21.317
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.01       0.972     1         0.986      1        slow_walking
+                 0.962     0.002      0.989     0.962     0.975      1        fast_walking
+                 0.993     0.012      0.98      0.993     0.986      0.997    slow_running
+                 0.954     0.001      0.994     0.954     0.974      0.988    fast_running
+                 0.984     0.001      0.984     0.984     0.984      1        upstairs
+                 0.927     0          1         0.927     0.962      1        downstairs
+Weighted Avg.    0.982     0.007      0.982     0.982     0.982      0.997
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 315   0   0   0   0   0 |   a = slow_walking
+   6 179   1   0   0   0 |   b = fast_walking
+   0   2 435   1   0   0 |   c = slow_running
+   0   0   8 166   0   0 |   d = fast_running
+   1   0   0   0  60   0 |   e = upstairs
+   2   0   0   0   1  38 |   f = downstairs
+
+
+Correctly Classified Instances        1193               98.1893 %
+Incorrectly Classified Instances        22                1.8107 %
+Kappa statistic                          0.976 
+Total Cost                               8.5   
+Average Cost                             0.007 
+Mean absolute error                      0.0155
+Root mean squared error                  0.0749
+Relative absolute error                  6.1538 %
+Root relative squared error             21.1017 %
+Coverage of cases (0.95 level)          99.6708 %
+Mean rel. region size (0.95 level)      20.7545 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3317 %
+Root relative squared error             33.0395 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.329
+ -0.804   0.741
+ -0.704   0.905
+ -0.604   1.152
+ -0.4     1.646
+ -0.3     1.728
+ -0.2     2.305
+ -0.104   2.387
+ -0.1     2.551
+  0       3.21 
+  0.1     3.704
+  0.2     5.021
+  0.3     5.679
+  0.4     8.066
+  0.5     8.56 
+  0.6    11.111
+  0.7    12.428
+  0.8    21.811
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.978     0.009      0.975     0.978     0.976      0.997    slow_walking
+                 0.962     0.013      0.932     0.962     0.947      0.997    fast_walking
+                 0.986     0.01       0.982     0.986     0.984      0.997    slow_running
+                 0.954     0.001      0.994     0.954     0.974      0.991    fast_running
+                 0.918     0.002      0.966     0.918     0.941      0.999    upstairs
+                 0.976     0.002      0.952     0.976     0.964      0.999    downstairs
+Weighted Avg.    0.972     0.008      0.972     0.972     0.972      0.997
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 308   6   0   0   1   0 |   a = slow_walking
+   6 179   1   0   0   0 |   b = fast_walking
+   0   5 432   1   0   0 |   c = slow_running
+   0   1   7 166   0   0 |   d = fast_running
+   2   1   0   0  56   2 |   e = upstairs
+   0   0   0   0   1  40 |   f = downstairs
+
+
+Correctly Classified Instances        1181               97.2016 %
+Incorrectly Classified Instances        34                2.7984 %
+Kappa statistic                          0.9629
+Total Cost                              16     
+Average Cost                             0.0132
+Mean absolute error                      0.0202
+Root mean squared error                  0.0933
+Relative absolute error                  8.0381 %
+Root relative squared error             26.2894 %
+Coverage of cases (0.95 level)          99.6708 %
+Mean rel. region size (0.95 level)      21.2483 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3319 %
+Root relative squared error             33.0407 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.004      0.999     1         1          0.998    moving
+                 0.996     0          1         0.996     0.998      0.998    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0.003      0.999     0.999     0.999      0.998
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1215    0    0 |    a = moving
+    1  258    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.165
+ -0.804   0.329
+ -0.704   0.412
+ -0.604   0.494
+ -0.4     0.658
+ -0.3     0.741
+ -0.2     0.988
+ -0.1     1.152
+  0       1.646
+  0.2     2.14 
+  0.3     2.551
+  0.4     4.115
+  0.5     4.691
+  0.6     8.56 
+  0.7    10.535
+  0.8    21.975
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.006      0.984     1         0.992      1        slow_walking
+                 0.968     0.004      0.978     0.968     0.973      1        fast_walking
+                 0.991     0.01       0.982     0.991     0.986      0.998    slow_running
+                 0.96      0          1         0.96      0.979      0.994    fast_running
+                 0.984     0          1         0.984     0.992      1        upstairs
+                 1         0.001      0.976     1         0.988      1        downstairs
+Weighted Avg.    0.985     0.006      0.985     0.985     0.985      0.998
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 315   0   0   0   0   0 |   a = slow_walking
+   5 180   1   0   0   0 |   b = fast_walking
+   0   4 434   0   0   0 |   c = slow_running
+   0   0   7 167   0   0 |   d = fast_running
+   0   0   0   0  60   1 |   e = upstairs
+   0   0   0   0   0  41 |   f = downstairs
+
+
+Correctly Classified Instances        1197               98.5185 %
+Incorrectly Classified Instances        18                1.4815 %
+Kappa statistic                          0.9804
+Total Cost                               7.2   
+Average Cost                             0.0059
+Mean absolute error                      0.0152
+Root mean squared error                  0.0698
+Relative absolute error                  6.0449 %
+Root relative squared error             19.6856 %
+Coverage of cases (0.95 level)          99.8354 %
+Mean rel. region size (0.95 level)      21.2346 %
+Total Number of Instances             1215     
+
+ -1       0    
+ -0.996   1.158
+  0.996  13.127
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 0.987     0          1         0.987     0.993      1        standing
+                 0         0.012      0         0         0          ?        lift
+Weighted Avg.    0.988     0          1         0.988     0.994      1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 225   3 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         256               98.8417 %
+Incorrectly Classified Instances         3                1.1583 %
+Kappa statistic                          0.9476
+Mean absolute error                      0.0077
+Root mean squared error                  0.0876
+Relative absolute error                  5.3321 %
+Root relative squared error             33.0421 %
+Coverage of cases (0.95 level)          98.8417 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.999     0          1         0.999     1          1        moving
+                 1         0.001      0.996     1         0.998      0.999    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0          0.999     0.999     0.999      1    
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1214    1    0 |    a = moving
+    0  259    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.412
+ -0.804   0.741
+ -0.604   1.235
+ -0.4     1.728
+ -0.3     1.893
+ -0.2     2.387
+ -0.1     2.634
+  0       3.868
+  0.1     3.951
+  0.2     5.35 
+  0.3     5.597
+  0.4     7.654
+  0.5     8.23 
+  0.6    11.44 
+  0.7    12.51 
+  0.8    20.247
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.984     0.017      0.954     0.984     0.969      0.997    slow_walking
+                 0.946     0.01       0.946     0.946     0.946      0.996    fast_walking
+                 0.989     0.013      0.977     0.989     0.983      0.996    slow_running
+                 0.954     0          1         0.954     0.976      0.991    fast_running
+                 0.869     0.003      0.946     0.869     0.906      0.999    upstairs
+                 0.927     0.001      0.974     0.927     0.95       1        downstairs
+Weighted Avg.    0.968     0.011      0.968     0.968     0.968      0.996
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 310   4   0   0   1   0 |   a = slow_walking
+   8 176   2   0   0   0 |   b = fast_walking
+   0   5 433   0   0   0 |   c = slow_running
+   0   1   7 166   0   0 |   d = fast_running
+   7   0   0   0  53   1 |   e = upstairs
+   0   0   1   0   2  38 |   f = downstairs
+
+
+Correctly Classified Instances        1176               96.7901 %
+Incorrectly Classified Instances        39                3.2099 %
+Kappa statistic                          0.9574
+Total Cost                              21.9   
+Average Cost                             0.018 
+Mean absolute error                      0.0196
+Root mean squared error                  0.0939
+Relative absolute error                  7.7658 %
+Root relative squared error             26.4712 %
+Coverage of cases (0.95 level)          99.5885 %
+Mean rel. region size (0.95 level)      20.5898 %
+Total Number of Instances             1215     
+
+ -1       0    
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 1         0          1         1         1          1        standing
+                 0         0          0         0         0          ?        lift
+Weighted Avg.    1         0          1         1         1          1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 228   0 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         259              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.98
+ -1       0    
+ -0.804   0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.999     0          1         0.999     1          1        moving
+                 1         0.001      0.996     1         0.998      1        nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0          0.999     0.999     0.999      1    
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1214    1    0 |    a = moving
+    0  259    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0004
+Root mean squared error                  0.0191
+Relative absolute error                  0.2102 %
+Root relative squared error              6.1596 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      33.3559 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.576
+ -0.804   0.905
+ -0.704   0.988
+ -0.604   1.811
+ -0.4     2.14 
+ -0.2     2.305
+ -0.104   2.551
+ -0.1     2.634
+  0       3.374
+  0.1     3.457
+  0.2     4.362
+  0.3     4.938
+  0.4     6.337
+  0.5     7.16 
+  0.6    10.123
+  0.7    10.864
+  0.8    19.342
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.984     0.016      0.957     0.984     0.97       0.995    slow_walking
+                 0.941     0.01       0.946     0.941     0.943      0.994    fast_walking
+                 0.991     0.013      0.977     0.991     0.984      0.997    slow_running
+                 0.96      0          1         0.96      0.979      0.988    fast_running
+                 0.902     0.003      0.948     0.902     0.924      0.998    upstairs
+                 0.902     0          1         0.902     0.949      1        downstairs
+Weighted Avg.    0.97      0.01       0.97      0.97      0.969      0.995
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 310   5   0   0   0   0 |   a = slow_walking
+   9 175   1   0   1   0 |   b = fast_walking
+   0   4 434   0   0   0 |   c = slow_running
+   0   0   7 167   0   0 |   d = fast_running
+   5   1   0   0  55   0 |   e = upstairs
+   0   0   2   0   2  37 |   f = downstairs
+
+
+Correctly Classified Instances        1178               96.9547 %
+Incorrectly Classified Instances        37                3.0453 %
+Kappa statistic                          0.9595
+Total Cost                              18.1   
+Average Cost                             0.0149
+Mean absolute error                      0.0184
+Root mean squared error                  0.0936
+Relative absolute error                  7.3084 %
+Root relative squared error             26.3681 %
+Coverage of cases (0.95 level)          99.4239 %
+Mean rel. region size (0.95 level)      20.5075 %
+Total Number of Instances             1215     
+
+ -1       0    
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 1         0          1         1         1          1        standing
+                 0         0          0         0         0          ?        lift
+Weighted Avg.    1         0          1         1         1          1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 228   0 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         259              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.98
+ -1       0.068
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.999     0          1         0.999     1          1        moving
+                 1         0.001      0.996     1         0.998      0.999    nonmoving
+                 0         0          0         0         0          ?        not_in_pocket
+Weighted Avg.    0.999     0          0.999     0.999     0.999      1    
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1214    1    0 |    a = moving
+    0  259    0 |    b = nonmoving
+    0    0    0 |    c = not_in_pocket
+
+
+Correctly Classified Instances        1473               99.9322 %
+Incorrectly Classified Instances         1                0.0678 %
+Kappa statistic                          0.9977
+Mean absolute error                      0.0005
+Root mean squared error                  0.0213
+Relative absolute error                  0.2335 %
+Root relative squared error              6.844  %
+Coverage of cases (0.95 level)          99.9322 %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances             1474     
+Ignored Class Unknown Instances                  1     
+
+ -1       0.247
+ -0.804   0.412
+ -0.604   0.494
+ -0.6     0.576
+ -0.4     0.823
+ -0.2     1.152
+ -0.1     1.235
+  0       1.893
+  0.1     2.058
+  0.2     2.305
+  0.3     2.634
+  0.4     4.28 
+  0.5     5.185
+  0.6     8.148
+  0.7    10.123
+  0.8    20.741
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.007      0.981     1         0.991      1        slow_walking
+                 0.984     0.004      0.979     0.984     0.981      0.999    fast_walking
+                 0.991     0.01       0.982     0.991     0.986      0.997    slow_running
+                 0.948     0.001      0.994     0.948     0.971      0.994    fast_running
+                 0.967     0          1         0.967     0.983      1        upstairs
+                 0.976     0          1         0.976     0.988      1        downstairs
+Weighted Avg.    0.984     0.006      0.984     0.984     0.984      0.998
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   <-- classified as
+ 315   0   0   0   0   0 |   a = slow_walking
+   3 183   0   0   0   0 |   b = fast_walking
+   0   3 434   1   0   0 |   c = slow_running
+   0   1   8 165   0   0 |   d = fast_running
+   2   0   0   0  59   0 |   e = upstairs
+   1   0   0   0   0  40 |   f = downstairs
+
+
+Correctly Classified Instances        1196               98.4362 %
+Incorrectly Classified Instances        19                1.5638 %
+Kappa statistic                          0.9793
+Total Cost                               8.2   
+Average Cost                             0.0067
+Mean absolute error                      0.015 
+Root mean squared error                  0.0722
+Relative absolute error                  5.9687 %
+Root relative squared error             20.3445 %
+Coverage of cases (0.95 level)          99.7531 %
+Mean rel. region size (0.95 level)      20.9053 %
+Total Number of Instances             1215     
+
+ -1       0    
+  1     100    
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        sitting
+                 1         0          1         1         1          1        standing
+                 0         0          0         0         0          ?        lift
+Weighted Avg.    1         0          1         1         1          1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  31   0   0 |   a = sitting
+   0 228   0 |   b = standing
+   0   0   0 |   c = lift
+
+
+Correctly Classified Instances         259              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      33.3333 %
+Total Number of Instances              259     
+
+OVERALL PRECISION 0.99

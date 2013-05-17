@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GlasgowActivityClassifier</string>
+    <string name="action_settings">Settings</string>
+    <string name="data_gathering_info">This program gathers sensor data on your phone. This data will be used to help develop GlasgowActivityClassifier, which is a program designed to classify daily activities. You will be asked to perform several activities.</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string-array name="activity_names">
+        <item >sitting</item>
+        <item >standing</item>
+        <item >slow_walking</item>
+        <item >fast_walking</item>
+        <item >slow_running</item>
+        <item >fast_running</item>
+        <item >upstairs</item>
+        <item >downstairs</item>
+        <item >not_in_pocket</item>
+    </string-array>
+
+</resources>
